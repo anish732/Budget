@@ -75,6 +75,7 @@ h5 {
 .middle {
   background-color: rgb(247, 250, 253);
   height: 80px;
+  width: 100%;
 }
 .increase {
   height: 45px;
