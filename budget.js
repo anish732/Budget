@@ -1,4 +1,22 @@
-var budgetController = (function() {})();
+var budgetController = (function() {
+  var Income = function(id, discription, value) {
+    (this.id = id), (this.discription = discription), (this.value = value);
+  };
+
+  var Expense = function(id, discription, value) {
+    (this.id = id), (this.discription = discription), (this.value = value);
+  };
+  var data = {
+    allItems: {
+      exp: [],
+      inc: []
+    },
+    totals: {
+      exp: 0,
+      inc: 0
+    }
+  };
+})();
 
 var UIcontroller = (function() {
   var DOMstrings = {
@@ -23,18 +41,26 @@ var UIcontroller = (function() {
 })();
 
 var controller = (function(budgetctrl, UIctrl) {
-  var DOM = UIctrl.getDOMstrings();
+  var setupEventListners = function() {
+    var DOM = UIctrl.getDOMstrings();
+    document.querySelector(DOM.inputBtn).addEventListener("click", ctrlAddItem);
+
+    document.addEventListener("keypress", function(event) {
+      if (event.keyCode === 13 || event.which === 13) {
+        ctrlAddItem();
+      }
+    });
+  };
   var ctrlAddItem = function() {
     var input = UIctrl.getInput();
-
-    console.log(input);
   };
 
-  document.querySelector(DOM.inputBtn).addEventListener("click", ctrlAddItem);
-
-  document.addEventListener("keypress", function(event) {
-    if (event.keyCode === 13 || event.which === 13) {
-      ctrlAddItem();
+  return {
+    init: function() {
+      console.log("Application has started");
+      setupEventListners();
     }
-  });
+  };
 })(budgetController, UIcontroller);
+
+controller.init();
