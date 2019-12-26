@@ -1,0 +1,93 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.top {
+  height: 270px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("back.png");
+  background-position: bottom;
+  color: white;
+  text-align: center;
+  opacity: 1.9;
+}
+h5 {
+  padding-top: 22px;
+}
+
+.income-div {
+  display: inline;
+}
+.income {
+  width: 380px;
+  height: 50px;
+  margin-left: 200px;
+  background-color: #28b9b5;
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  border: none;
+}
+.income-2 {
+  float: right;
+  margin-top: -34px;
+  margin-right: 50px;
+  color: white;
+  font-size: 16px;
+}
+.expense {
+  width: 380px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #ff5049;
+  color: black;
+  text-align: left;
+  margin-left: 200px;
+  font-size: 18px;
+  border: none;
+}
+.expense-2 {
+  float: right;
+  margin-top: -34px;
+  margin-right: 50px;
+  color: white;
+  font-size: 16px;
+}
+.percentage {
+  position: fixed;
+  margin-left: 10px;
+}
+.middle {
+  background-color: rgb(247, 250, 253);
+  height: 80px;
+}
+.increase {
+  height: 45px;
+  width: 50px;
+  margin-left: 7%;
+  margin-top: 12px;
+}
+.discription {
+  width: 380px;
+  height: 45px;
+  margin-left: 20px;
+  border-radius: 4px;
+  border: none;
+  font-size: 18px;
+}
+.number {
+  height: 45px;
+  width: 80px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 20px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+.container {
+  width: 50%;
+  float: left;
+  font-size: 20px;
+}
