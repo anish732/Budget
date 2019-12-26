@@ -23,7 +23,7 @@ h5 {
 .income {
   width: 380px;
   height: 50px;
-  margin-left: 200px;
+  margin-left: 40%;
   background-color: #28b9b5;
   color: black;
   text-align: left;
@@ -44,7 +44,7 @@ h5 {
   background-color: #ff5049;
   color: black;
   text-align: left;
-  margin-left: 200px;
+  margin-left: 40%;
   font-size: 18px;
   border: none;
 }
