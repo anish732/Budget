@@ -1,6 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .wrapper {
   height: 100%;
   width: 100%;
+  margin-top: -8px;
 }
 
 .top {
@@ -12,6 +24,7 @@
   color: white;
   text-align: center;
   opacity: 1.9;
+  padding-top: 18px;
 }
 h5 {
   padding-top: 22px;
@@ -66,28 +79,74 @@ h5 {
 .increase {
   height: 45px;
   width: 50px;
-  margin-left: 7%;
+  margin-left: 31%;
   margin-top: 12px;
+  border: solid 1px #e7e7e7;
+  background-color: #fff;
+  transition: border 0.3s;
 }
 .discription {
   width: 380px;
   height: 45px;
-  margin-left: 20px;
+  margin-left: 4%;
   border-radius: 4px;
-  border: none;
   font-size: 18px;
+  border: solid 1px #e7e7e7;
+  background-color: #fff;
+  transition: border 0.3s;
 }
 .number {
   height: 45px;
   width: 80px;
   border-radius: 4px;
-  border: none;
+  border: solid 1px #e7e7e7;
+  background-color: #fff;
   margin-left: 20px;
   padding-left: 5px;
   font-size: 18px;
+  transition: border 0.3s;
 }
-.container {
+.increase:focus,
+.number:focus,
+.discription:focus {
+  outline: none;
+  border: solid 1px #28b9b5;
+}
+.add_btn {
+  font-size: 35px;
+  background: none;
+  border: none;
+  color: #28b9b5;
+  display: inline-block;
+  vertical-align: middle;
+  line-break: 1.1;
+  cursor: pointer;
+}
+.add_btn:active {
+  transform: translateY(2px);
+}
+.add_btn:focus {
+  outline: none;
+
+  border: none;
+}
+.container_income {
+  width: 40%;
+  float: left;
+  font-size: 20px;
+  margin-left: 9%;
+}
+.container_expense {
   width: 50%;
   float: left;
   font-size: 20px;
+}
+.income_text {
+  color: #28b9b5;
+  padding: 50px;
+}
+
+.expense_text {
+  color: #ff5049;
+  padding: 50px;
 }
