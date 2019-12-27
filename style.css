@@ -86,7 +86,7 @@ h5 {
   background-color: #fff;
   transition: border 0.3s;
 }
-.discription {
+.description {
   width: 380px;
   height: 45px;
   margin-left: 4%;
@@ -109,7 +109,7 @@ h5 {
 }
 .increase:focus,
 .number:focus,
-.discription:focus {
+.description:focus {
   outline: none;
   border: solid 1px #28b9b5;
 }
@@ -131,23 +131,121 @@ h5 {
 
   border: none;
 }
+.container {
+  width: 1050px;
+  margin: 60px auto;
+}
+
 .container_income {
-  width: 40%;
   float: left;
-  font-size: 20px;
-  margin-left: 9%;
+  width: 475px;
+  margin-right: 50px;
 }
-.container_expense {
-  width: 50%;
+.expenses {
   float: left;
-  font-size: 20px;
+  width: 475px;
 }
-.income_text {
+h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.icome_title {
   color: #28b9b5;
   padding: 50px;
 }
 
-.expense_text {
+.expense_title {
   color: #ff5049;
   padding: 50px;
+}
+.item {
+  font-size: medium;
+}
+
+.item:first-child {
+  border-top: 1px solid #e7e7e7;
+}
+.item:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.item__description {
+  float: left;
+  width: 60%;
+}
+
+.item__value {
+  float: left;
+  transition: transform 0.3s;
+}
+
+.item__percentage {
+  float: left;
+  margin-left: 20px;
+  transition: transform 0.3s;
+  font-size: 11px;
+  background-color: #ffdad9;
+  padding: 3px;
+  border-radius: 3px;
+  width: 32px;
+  text-align: center;
+}
+
+.container_income .item__value,
+.container_income .item__delete--btn {
+  color: #28b9b5;
+}
+
+.expenses .item__value,
+.expenses .item__percentage,
+.expenses .item__delete--btn {
+  color: #ff5049;
+}
+
+.item__delete {
+  float: left;
+}
+
+.item__delete--btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  display: none;
+}
+
+.item__delete--btn:focus {
+  outline: none;
+}
+.item__delete--btn:active {
+  transform: translateY(2px);
+}
+
+.item:hover .item__delete--btn {
+  display: block;
+}
+.item:hover .item__value {
+  transform: translateX(-20px);
+}
+.item:hover .item__percentage {
+  transform: translateX(-20px);
+}
+
+.unpaid {
+  background-color: #ffdad9 !important;
+  cursor: pointer;
+  color: #ff5049;
+}
+
+.unpaid .item__percentage {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+}
+.unpaid:hover .item__description {
+  font-weight: 900;
 }
