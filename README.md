@@ -1,5 +1,7 @@
 # Budget
 
+## Demo: [Budget](https://anish732.github.io/Budget/)
+
 ### Budget App is to calculate monthly budget. You can enter all your income and expenses. It will give you available balance. Budget App will calculate percentage of your each expense and also total expenses.
 
 ## Screenshot:
