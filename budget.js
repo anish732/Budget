@@ -224,6 +224,7 @@ var UIcontroller = (function() {
         obj.budget,
         type
       );
+
       document.querySelector(DOMstrings.incomeLable).textContent = formatNumber(
         obj.totalInc,
         "inc"
