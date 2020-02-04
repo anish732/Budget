@@ -35,3 +35,5 @@ This code format numbers. It convert from 20000 to 20,000.00
 <li> HTML
 <li> CSS
 <li> JavaScript
+
+</ul>
